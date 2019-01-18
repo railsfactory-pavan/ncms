@@ -11,5 +11,6 @@ ActiveAdmin.register Customer do
 #   permitted << :other if params[:action] == 'create' && current_user.admin?
 #   permitted
 # end
-
+	
+	permit_params :name, :address, :mobile_no, :email, :work_details, :fees, :total_fees	
 end
